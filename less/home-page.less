@@ -6,10 +6,32 @@
 
     h2 {
       padding: 15px;
+      .animate();
+    }
+
+
+    @keyframes animate{
+      0% {font-size: 1rem; color: black;}
+      25% {font-size: 2.5rem; color: blue;}
+      50% {font-size: 3.5rem; color: red;}
+      100% {font-size: 5rem; color: yellow};
     }
 
     p {
       padding:0 15px;
+    }
+
+    .about-p{
+      padding-top: 2%;
+    }
+
+    @media @phone{
+      width: @main-width;
+      margin: 0 auto;
+    }
+
+    .about-header{
+      max-width: 800px;
     }
   
   }
@@ -24,6 +46,30 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+      @media @phone{
+      .sky, .launch{
+        display: none;
+      }
+      .blast{
+        width: 100%;
+      }
+    }
+  }
+
+  .about-images{
+    justify-content: center;
+    .astro{
+      width: 38%;
+
+    }
+  }
+
+  img {
+    
+    @media @phone{
+      width: @main-width; 
     }
   }
 
@@ -46,11 +92,25 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      .flex(center, center, column-reverse);
+      padding: 5% 0 0 0;
+      margin: 0;
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @phone{
+        width: 95%;
+      }
+
       h3 {
         margin-bottom: 10px;
+        @media @phone{
+          width: 95%;
+          padding-top: 5%;
+        }
       }
 
       p {
@@ -58,12 +118,28 @@
       }
 
       .btn {
+        .bttn(@wild-sand, @ebony-clay, 20%, 1.4rem, center);
+
+        &:hover{
+          background-color: @wild-sand;
+          color: @ebony-clay;
+        }
+
+        @media @phone{
+          width: @main-width;
+          padding: 5% 0; 
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+        @media @phone{
+          width: 95%;
+          margin: 0;
+        }
       
       img {
         width: 100%;

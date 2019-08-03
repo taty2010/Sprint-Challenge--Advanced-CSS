@@ -1,1 +1,34 @@
 // Mixins Here
+
+//FLEx
+.flex(@justify, @align-items, @flex-flow){
+    display: flex;
+    flex-flow: @flex-flow;
+    justify-content: @justify;
+    align-items: @align-items;
+}
+
+//BUTTON
+
+.bttn(@color, @bg-color, @width, @f-size, @align){
+    color: @color;
+    background-color: @bg-color;
+    width: @width;
+    font-size: @f-size;
+    text-align: @align;
+    padding: 2% 0;
+    border-radius: 5px;
+}
+
+
+//Animation 
+
+.animate{
+    animation: animate 2s;
+}
+
+//Darken 
+
+.darker{
+    background-color: darken(@nav-bg, 5%);
+}
