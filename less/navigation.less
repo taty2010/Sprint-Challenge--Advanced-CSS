@@ -1,1 +1,22 @@
 // Navigation code here
+
+.nav-wrapper{
+    width: @main-width;
+    height: 100px;
+    .flex(center, center, column);
+    background-color: @nav-bg;
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    nav{
+        width: @main-width;
+        a{
+            text-decoration: none;
+            color: @nav-font;
+            padding: 3% 5%;
+            text-align: center;
+        }
+    }
+}
