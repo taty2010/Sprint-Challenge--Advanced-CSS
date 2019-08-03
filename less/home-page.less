@@ -6,6 +6,15 @@
 
     h2 {
       padding: 15px;
+      .animate();
+    }
+
+
+    @keyframes animate{
+      0% {font-size: 1rem; color: black;}
+      25% {font-size: 2.5rem; color: blue;}
+      50% {font-size: 3.5rem; color: red;}
+      100% {font-size: 5rem; color: yellow};
     }
 
     p {
