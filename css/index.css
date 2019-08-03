@@ -234,6 +234,9 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro .about-p {
+  padding-top: 2%;
+}
 @media (max-width: 500px) {
   .home .intro {
     width: 100%;
